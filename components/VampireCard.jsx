@@ -17,7 +17,7 @@ function VampireCard() {
     })
 
     useEffect(() => {
-        fetch(`${API}/vamps/${id}`)
+        fetch(`${API}/vampires/${id}`)
         .then(res => res.json())
         .then(res => {
             console.log(res);setDetails(res);
