@@ -23,7 +23,15 @@ function VampireCard() {
 
   })
 
-  
+  const handleDelete = () => {
+    fetch(`http://localhost:3333/vampires/${id}`, {
+      method: "DELETE"
+    })
+      .then(res => res.json())
+      .then(res => navigate('/vamps'))
+      .catch(err => console.log(err))
+  };
+
   useEffect(() => {
     fetch(`http://localhost:3333/vampires/${id}`)
     .then(res => res.json())
@@ -34,14 +42,7 @@ function VampireCard() {
     .catch(err => console.error(err))
   }, [id])
   
-  const handleDelete = () => {
-    fetch(`http://localhost:3333/vampires/${id}`, {
-      method: "DELETE"
-    })
-      .then(res => res.json())
-      .then(res => navigate('/vampires'))
-      .catch(err => console.log(err))
-  };
+  
   // console.log(details)
   return (
     <section>
