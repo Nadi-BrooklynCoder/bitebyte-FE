@@ -1,21 +1,23 @@
-import React, { useState } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 function Vampire() {
  const [vamp,setVamp] = useState([]) ;
 
   return (
     <div className='vampireCard'>
-       <div className='vampireDetails'>
-        <p>Vampire Name: {vampire.name}</p>
-        <p>Date Bitten: {vampire.date_turned}</p>
-        <p>Location: {vampire.location}</p>
-        <p>Age: {vampire.age} </p>
-        <p>Main Die: {vampire.main_diet}t</p>
-        <p>Ability: {vampire.power}</p>
-        <p>Dangerous: {vampire.dangerous}</p>
-        <p>Date Documented: {vampire.date_documented}</p>
-
-       </div>
+      <div className='vampireDetails'>
+        <Link to={`/vamps/${id}`}>
+          <p>Vampire Name: {vamp.name}</p>
+        </Link>
+        <p>Date Bitten: {vamp.date_turned}</p>
+        <p>Location: {vamp.location}</p>
+        <p>Age: {vamp.age} </p>
+        <p>Main Diet: {vamp.main_diet}</p>
+        <p>Ability: {vamp.power}</p>
+        <p>Dangerous: {vamp.dangerous}</p>
+        <p>Date Documented: {vamp.date_documented}</p>
+      </div>
     </div>
   )
 }
