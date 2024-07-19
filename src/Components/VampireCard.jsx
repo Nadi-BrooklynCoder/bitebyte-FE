@@ -30,6 +30,7 @@ function VampireCard() {
   }, [])
 
   const handleDelete = () => {
+    if(window.confirm("Are you sure you want to delete this vampire?"))
     fetch(`${API}/vampires/${id}`, {
       method: "DELETE"
     })
