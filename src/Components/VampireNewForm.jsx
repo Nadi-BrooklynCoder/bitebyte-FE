@@ -15,7 +15,7 @@ function CreateVampire() {
     power: '',
     is_dangerous: false,
     date_documented: ''
-  });
+  })
 
   const addVampire = () => {
     fetch(`${API}/vampires`, {
@@ -26,26 +26,26 @@ function CreateVampire() {
       }
     })
     .then(res => res.json())
-    .then(res => navigate('/vampires'))
+    .then(newVamp => navigate(`/vamps/${newVamp.id}`))
     .catch(err => console.error(err));
-  };
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
     addVampire();
-  };
+  }
 
   const handleInputChange = (e) => {
     setNewVampire((prevState) => {
       return { ...prevState, [e.target.name]: e.target.value };
-    });
-  };
+    })
+  }
 
   const handleCheckBoxChange = () => {
     setNewVampire((prevState) => {
       return { ...prevState, is_dangerous: !prevState.is_dangerous };
-    });
-  };
+    })
+  }
 
   return (
     <div className="vampireForm">
@@ -141,7 +141,7 @@ function CreateVampire() {
         <button type="submit">Submit</button>
       </form>
     </div>
-  );
+  )
 }
 
-export default CreateVampire;
+export default CreateVampire

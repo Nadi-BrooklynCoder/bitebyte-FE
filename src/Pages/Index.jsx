@@ -1,12 +1,12 @@
 import React from 'react'
-import Vamps from '../components/Vamps'
+import Vamps from '../Components/Vamps'
 
 function Index() {
 
   return (
     <div>
       <h2>Vampire Rolodex</h2>
-      <Vamps/>
+      <Vamps />
     </div>
   )
 }

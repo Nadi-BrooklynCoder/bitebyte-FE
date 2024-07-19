@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.css'
-import picture from '../src/assets/vampcheeky.png'
+import picture from '../assets/vampcheeky.png'
 
 
 function Home() {
