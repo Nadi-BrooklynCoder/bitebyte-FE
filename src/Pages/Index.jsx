@@ -1,11 +1,12 @@
 import React from 'react'
 import Vamps from '../Components/Vamps'
+import './indexx.css'
 
 function Index() {
 
   return (
-    <div>
-      <h2>Vampire Rolodex</h2>
+    <div className='roledex'>
+      <h2 className='vt'>Vampire Rolodex</h2>
       <Vamps />
     </div>
   )

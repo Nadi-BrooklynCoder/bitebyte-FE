@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import VampireCard from '../Components/VampireCard'
+import './Show.css'
 
 function Show() {
    
   return (
     <div>
-      <h2>Vampire Profile</h2>
+      <h2 className='st'>Vampire Profile</h2>
       <VampireCard />
     </div>
   )

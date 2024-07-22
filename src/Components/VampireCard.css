@@ -1,0 +1,63 @@
+.vampireCard{
+    border: black solid 1px;
+    margin: 2%;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 0px 0px 2px 2px black;
+    font-size: 24px;
+  
+   
+}
+
+.vampireCard:hover{
+    background-color: rgb(105, 103, 101);
+    margin-left: 3%;
+    margin-right: 3%;
+    color: aliceblue;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 5px rgb(255, 245, 212);
+    border: 2px solid rgb(255, 245, 212);
+
+}
+.VampireCard{
+  border: black solid 2px;
+  box-shadow: 0px 0px 2px 2px black;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 30px;
+  text-decoration: underline rgba(255, 255, 255, 0.572);
+  letter-spacing: 1px;
+  
+
+
+}
+
+.VampireCard:hover{
+    color: aliceblue;
+
+}
+
+span{
+    font-size: 25px;
+    color: black;
+}
+/* span:hover{
+   
+} */
+
+p:hover{
+    color: aliceblue;
+}
+a{
+   font-size: 30px;
+   text-decoration: none;
+
+}
+a:hover{
+    font-size: 35px;
+ 
+    letter-spacing: 2px;
+    
+}

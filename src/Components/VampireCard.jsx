@@ -3,6 +3,7 @@ import { Link, useParams, useNavigate } from "react-router-dom"
 import DangerousIcon from '../assets/Dangerous.png'
 import NotDangerousIcon from '../assets/NotDangerous.png'
 import  formatDate  from '../helpers/date'
+import './VampireCard.css'
 
 const API = import.meta.env.VITE_BASE_URL;
 
@@ -16,7 +17,7 @@ function VampireCard() {
     age: "",
     main_diet: "",
     power: "",
-    is_dangerous: "",
+    is_dangerous:"" ,
     date_documented: "",
   })
 
@@ -42,28 +43,37 @@ function VampireCard() {
   }
   
  return (
-    <section>
+    <section className="VampireCard">
       <p>
-       NAME: {details.name}
-      </p>
-      <p>
-       DATE TURNED: {details.date_turned}
+      <span> NAME: </span>{details.name}
       </p>
       <p>
-       LOCATION: {details.location}
+      <span>
+       DATE TURNED:</span> {details.date_turned}
       </p>
+      <p><span>
+       LOCATION:</span>{details.location}
+      </p>
+      <p><span>
+        AGE:</span>{details.age}
+      </p>
+      
       <p>
-        AGE: {details.age}
+      <span>DIET:</span>{details.main_diet}
       </p>
-      <p>DIET: {details.main_diet}
+
+      <p>
+      <span>SUPERNATURAL ABILITIES: 
+      </span>{details.power}
       </p>
-      <p>SUPERNATURAL ABILITIES: {details.power}
-      </p>
+
       <p>DANGEROUS?:
        {details.is_dangerous ? <img src={DangerousIcon} alt="Dangerous"/> : <img src={NotDangerousIcon} alt="Not Dangerous" /> }
       </p>
       <p>
-       DATE DOCUMENTED: {details.date_documented}
+        <span>
+       DATE DOCUMENTED: 
+       </span>{details.date_documented}
       </p>
       <Link to={`/vamps`}>
             <button>Back</button>
