@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import "./VampireNewForm.css"
 
 const API = import.meta.env.VITE_BASE_URL;
 
@@ -50,7 +51,7 @@ function CreateVampire() {
   return (
     <div className="vampireForm">
       <h2>Add a New Vampire</h2>
-      <form className="form" onSubmit={handleSubmit}>
+      <form className="formmm" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
           <input

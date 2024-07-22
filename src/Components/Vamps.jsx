@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Vampire from "./Vampire";
 import formatDate from "../helpers/date"
 import calculateTurnedTime from "../helpers/turnedCalculation"
+import './Vamps.css'
 
 const API = import.meta.env.VITE_BASE_URL;
 
@@ -22,7 +23,7 @@ function Vamps() {
   }, [])
 
     return (
-        <div>
+        <div className="">
             {vamps.map((vamp) => {
               return <Vampire key={vamp.id} vamp={vamp} id={vamp.id} />
             })}
