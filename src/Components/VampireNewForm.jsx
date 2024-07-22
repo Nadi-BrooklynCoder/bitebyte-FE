@@ -50,7 +50,7 @@ function CreateVampire() {
 
   return (
     <div className="vampireForm">
-      <h2>Add a New Vampire</h2>
+      <h2 className='fang'>New <span className='fangg'> Fanger? </span>Add 'em here!</h2>
       <form className="formmm" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name:</label>
@@ -139,7 +139,7 @@ function CreateVampire() {
             required
           />
         </div>
-        <button type="submit">Submit</button>
+        <button className= "nb" type="submit">Submit</button>
       </form>
     </div>
   )

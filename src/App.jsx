@@ -23,6 +23,7 @@ function App() {
             <Route path="/vamps/:id" element={<Show />} />
             <Route path="/vamps/:id/edit" element={<Edit />} />
             <Route path="*" element={<FourOFour />} />
+            <Route path="/vamps/404" element={<FourOFour/>}/>
           </Routes>
         </div>
 

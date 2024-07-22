@@ -27,6 +27,10 @@ function VampireCard() {
     .then(res => {
       res.date_turned = formatDate(res.date_turned)
       res.date_documented = formatDate(res.date_documented)
+    if(!res.name){ 
+      navigate("/404");
+
+    }
       setDetails(res)
   })
     .catch(err => console.log(err))
@@ -55,20 +59,19 @@ function VampireCard() {
        LOCATION:</span>{details.location}
       </p>
       <p><span>
-        AGE:</span>{details.age}
+        AGE:</span>{details.age} yrs
       </p>
       
       <p>
-      <span>DIET:</span>{details.main_diet}
+      <span>DIET: </span>{details.main_diet}
       </p>
 
       <p>
-      <span>SUPERNATURAL ABILITIES: 
-      </span>{details.power}
+      <span>SUPERNATURAL ABILITIES:  </span>{details.power}
       </p>
 
-      <p>DANGEROUS?:
-       {details.is_dangerous ? <img src={DangerousIcon} alt="Dangerous"/> : <img src={NotDangerousIcon} alt="Not Dangerous" /> }
+      <p className="icon" >DANGEROUS?:
+       {details.is_dangerous ? <img className="drac" src={DangerousIcon} alt="Dangerous"/> : <img src={NotDangerousIcon} alt="Not Dangerous" /> }
       </p>
       <p>
         <span>
@@ -76,12 +79,12 @@ function VampireCard() {
        </span>{details.date_documented}
       </p>
       <Link to={`/vamps`}>
-            <button>Back</button>
+            <button className="but">Back</button>
           </Link>
       <Link to={`/vamps/${id}/edit`}>
-        <button>Edit</button>
+        <button className="but">Edit</button>
       </Link>
-      <button onClick={handleDelete}>Delete</button>
+      <button className="but" onClick={handleDelete}>Delete</button>
     </section>
   )
 }

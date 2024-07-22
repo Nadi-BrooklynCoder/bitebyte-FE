@@ -6,7 +6,7 @@ const FourOFour = () => {
     return (
         <div className='fourOfourpage'>
             
-            <h1 className='fourO'>Sorry, no bloodsuckers found</h1>
+            <h1 className='fourO'><span className='numfo'>(404)</span>  <br/> Sorry, no bloodsuckers found</h1>
            
         </div>
     )

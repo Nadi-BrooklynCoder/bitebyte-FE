@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { useParams, Link, useNavigate } from "react-router-dom"
 import formatDate from '../helpers/date'
+import './VampireEditForm.css'
 
 const API = import.meta.env.VITE_BASE_URL
 
@@ -62,11 +63,11 @@ function VampireEditForm() {
 
     return (
         <div className="vampireForm">
-        <h2>Edit Vampire</h2>
-        <form className="form" onSubmit={handleSubmit}>
+        <h2 className="edittext">Keep us up to date! See a Problem? <span className="fix">FIX it!</span></h2>
+        <form className="formE" onSubmit={handleSubmit}>
           <div>
             <label htmlFor="name">Name:</label>
-            <input
+            <input className="editinput"
               type="text"
               id="name"
               name="name"
@@ -77,7 +78,7 @@ function VampireEditForm() {
           </div>
           <div>
             <label htmlFor="date_turned">Date Turned:</label>
-            <input
+            <input className="editinput"
               type="date"
               id="date_turned"
               name="date_turned"
@@ -88,7 +89,7 @@ function VampireEditForm() {
           </div>
           <div>
             <label htmlFor="location">Location:</label>
-            <input
+            <input className="editinput"
               type="text"
               id="location"
               name="location"
@@ -98,7 +99,7 @@ function VampireEditForm() {
           </div>
           <div>
             <label htmlFor="age">Age:</label>
-            <input
+            <input className="editinput"
               type="number"
               id="age"
               name="age"
@@ -109,7 +110,7 @@ function VampireEditForm() {
           </div>
           <div>
             <label htmlFor="main_diet">Main Diet:</label>
-            <input
+            <input className="editinput"
               type="text"
               id="main_diet"
               name="main_diet"
@@ -120,7 +121,7 @@ function VampireEditForm() {
           </div>
           <div>
             <label htmlFor="power">Power:</label>
-            <input
+            <input className="editinput"
               type="text"
               id="power"
               name="power"
@@ -130,7 +131,7 @@ function VampireEditForm() {
           </div>
           <div>
             <label htmlFor="is_dangerous">
-              <input
+              <input className="editinput"
                 type="checkbox"
                 id="is_dangerous"
                 name="is_dangerous"
@@ -142,7 +143,7 @@ function VampireEditForm() {
           </div>
           <div>
             <label htmlFor="date_documented">Date Documented:</label>
-            <input
+            <input className="editinput"
               type="date"
               id="date_documented"
               name="date_documented"
@@ -151,7 +152,7 @@ function VampireEditForm() {
               required
             />
           </div>
-          <button type="submit">Submit</button>
+          <button className="sbb" type="submit">Submit</button>
         </form>
       </div>
     )

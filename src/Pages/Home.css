@@ -18,18 +18,24 @@
 
 h1{
    
-    font-size: 80px;
+    font-size: 90px;
     letter-spacing: 3px;
     animation: float 3s ease-in-out infinite;
 }
 h1:hover{
   text-shadow: 7px 9px 6px rgba(227, 16, 16, 0.778);
+  letter-spacing: 6px;
+  font-size: 100px;
 
 }
 h3{
     /* z-index: 1; */
     font-size: 30px;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
+}
+h3:hover{
+  font-size: 40px;
+  text-decoration: underline 2px rgb(211, 15, 15);
 }
 
 

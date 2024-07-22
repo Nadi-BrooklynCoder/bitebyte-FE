@@ -6,11 +6,17 @@
     margin-left: 5%;
     margin-right: 5%;
     box-shadow: 0px 0px 2px 2px black;
-    font-size: 24px;
+    font-size: 27px;
   
    
 }
-
+.icon{
+       img{
+        height: 60px;
+    }
+   
+   
+}
 .vampireCard:hover{
     background-color: rgb(105, 103, 101);
     margin-left: 3%;
@@ -26,9 +32,10 @@
   box-shadow: 0px 0px 2px 2px black;
   margin-left: 10%;
   margin-right: 10%;
-  font-size: 30px;
+  font-size: 35px;
   text-decoration: underline rgba(255, 255, 255, 0.572);
   letter-spacing: 1px;
+  border-radius: 5px;
   
 
 
@@ -36,12 +43,15 @@
 
 .VampireCard:hover{
     color: aliceblue;
+    border: 2px solid aliceblue;
+    box-shadow: 0px 0px 2px 2px;
+    letter-spacing: 2px;
 
 }
 
 span{
-    font-size: 25px;
-    color: black;
+    font-size: 29px;
+    color: rgba(160, 149, 149, 0.951);
 }
 /* span:hover{
    
@@ -60,4 +70,14 @@ a:hover{
  
     letter-spacing: 2px;
     
+}
+
+.but{
+    padding: 5px;
+    border-radius: 5px;
+    margin: 1%;
+    font-size: 20px;
+}
+.but:hover{
+    box-shadow: 0px 0px 2px 2px aliceblue;
 }
