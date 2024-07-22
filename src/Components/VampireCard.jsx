@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import React, { useState, useEffect } from "react"
+import { Link, useParams, useNavigate } from "react-router-dom"
+import DangerousIcon from '../assets/Dangerous.png'
+import NotDangerousIcon from '../assets/NotDangerous.png'
 import  formatDate  from '../helpers/date'
 
 const API = import.meta.env.VITE_BASE_URL;
@@ -58,7 +60,7 @@ function VampireCard() {
       <p>SUPERNATURAL ABILITIES: {details.power}
       </p>
       <p>DANGEROUS?:
-       {details.is_dangerous}
+       {details.is_dangerous ? <img src={DangerousIcon} alt="Dangerous"/> : <img src={NotDangerousIcon} alt="Not Dangerous" /> }
       </p>
       <p>
        DATE DOCUMENTED: {details.date_documented}
