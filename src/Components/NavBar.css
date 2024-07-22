@@ -1,0 +1,22 @@
+nav{
+    display: grid;
+    margin: 0;
+    grid-template-columns: 1fr 1fr;
+    
+}
+a{
+    
+    color: rgb(133, 21, 21);
+}
+h3{
+        margin: 0;
+        font-size: larger;
+ 
+}
+button{
+    border: none;
+}
+.vamp_button{
+    background-color: black;
+    
+}

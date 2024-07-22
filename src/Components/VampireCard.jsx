@@ -42,28 +42,26 @@ function VampireCard() {
  return (
     <section>
       <p>
-       {details.name}
+       NAME: {details.name}
       </p>
       <p>
-       {details.date_turned}
+       DATE TURNED: {details.date_turned}
       </p>
       <p>
-       {details.location}
+       LOCATION: {details.location}
       </p>
       <p>
-       {details.age}
+        AGE: {details.age}
       </p>
-      <p>
-       {details.main_diet}
+      <p>DIET: {details.main_diet}
       </p>
-      <p>
-       {details.power}
+      <p>SUPERNATURAL ABILITIES: {details.power}
       </p>
-      <p>
+      <p>DANGEROUS?:
        {details.is_dangerous}
       </p>
       <p>
-       {details.date_documented}
+       DATE DOCUMENTED: {details.date_documented}
       </p>
       <Link to={`/vamps`}>
             <button>Back</button>

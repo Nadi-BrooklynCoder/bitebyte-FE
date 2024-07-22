@@ -5,7 +5,7 @@ function Show() {
    
   return (
     <div>
-      <h2>Show Vampire</h2>
+      <h2>Vampire Profile</h2>
       <VampireCard />
     </div>
   )

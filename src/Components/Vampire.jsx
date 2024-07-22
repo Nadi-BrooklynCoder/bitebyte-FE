@@ -10,6 +10,7 @@ function Vampire({ vamp, id} ) {
           <p>{vamp.name}</p>
         </Link>
         <p>Turned {vamp.time_since_turned}</p>
+        
       </div>
     </div>
   )

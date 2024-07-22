@@ -1,41 +1,50 @@
-img{
-    height: 200px;
-    width: 200px;
-}
+
 .home{
-    background: linear-gradient(0deg, rgba(99,126,126,1) 45%, rgba(66,52,21,1) 100%);
-    
+    /* border: 2px solid cyan; */
     height: 100vh;
     width: 100vw;
-    border: 2px solid black;
+    
     display: grid;
-    justify-content: center;
+ 
     align-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
+    background-image: url(src/assets/forest.png);
+    background-size: 100vh;
     
     
 }
-@keyframes gradientAnimation {
-    0% {
-      background-position: 5% 50%;
-    }
-    100% {
-      background-position: 100% 50%;
-    }
-  }
+
 
 h1{
-    font-size: 50px;
+   
+    font-size: 80px;
+    letter-spacing: 3px;
+    animation: float 3s ease-in-out infinite;
+}
+h1:hover{
+  text-shadow: 7px 9px 6px rgba(227, 16, 16, 0.778);
+
 }
 h3{
+    /* z-index: 1; */
     font-size: 30px;
+    letter-spacing: 2px;
 }
-.homeCard{
-    border: black solid 2px;
-    height: 100%;
-    background-color: rgb(52, 53, 53);
-    border-radius: 5px;
-    box-shadow: black 0px 0px 1px 2px;
-    padding: 5%;
+
+
+/* .h3 {
+  border: 2px solid cyan;
+} */
+
+@keyframes float {
+  0% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-30px);
+  }
+  100% {
+      transform: translateY(0);
+  }
 }
