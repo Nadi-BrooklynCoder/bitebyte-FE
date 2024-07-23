@@ -43,10 +43,9 @@ cd your-repo-name
 ```
 
 ### Backend Setup
-Deployed Backend URL - https://bitebyte-backend-rjw6.onrender.com/
-```
-Deployed Frontend URL - https://bitebytes.netlify.app/
-```
+Deployed Backend URL - ``` https://bitebyte-backend-rjw6.onrender.com/ ```
+
+Deployed Frontend URL - ``` https://bitebytes.netlify.app/ ```
 1. Install dependencies
 ```bash
 npm install
