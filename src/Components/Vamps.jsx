@@ -12,16 +12,8 @@ function Vamps() {
 
   useEffect(() => {
     fetch(`${API}/vampires`)
+      .then(res => res.json())
       .then(res => {
-        if (!res.ok) {
-          throw new Error(`HTTP error! status: ${res.status}`);
-        }
-        return res.json();
-      })
-      .then(res => {
-        if (!Array.isArray(res)) {
-          throw new TypeError("Response is not an array");
-        }
         res.forEach(vamp => {
           vamp.date_turned = formatDate(vamp.date_turned);
           vamp.time_since_turned = calculateTurnedTime(vamp.date_turned);
