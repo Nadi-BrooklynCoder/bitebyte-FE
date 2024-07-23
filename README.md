@@ -43,7 +43,7 @@ cd your-repo-name
 ```
 
 ### Backend Setup
-Deployed URL - https://github.com/Nadi-BrooklynCoder/BiteByte-Backend
+Deployed URL - https://bitebyte-backend-rjw6.onrender.com/
 
 1. Install dependencies
 ```bash
