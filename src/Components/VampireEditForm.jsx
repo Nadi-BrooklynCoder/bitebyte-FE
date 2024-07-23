@@ -52,7 +52,9 @@ function VampireEditForm() {
             }
         })
             .then(res => res.json())
-            .then(navigate(`/vamps/${id}`))
+            .then(() => {
+              navigate(`/vamps/${id}`)
+            })
             .catch(err => console.log(err))
     }
 
