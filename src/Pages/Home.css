@@ -9,7 +9,7 @@
     align-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: white;
-    background-image: url(src/assets/forest.png);
+    background-image: url(/src/assets/forest.png);
     background-size: 100vh;
     
     
