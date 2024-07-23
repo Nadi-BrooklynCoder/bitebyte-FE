@@ -2,7 +2,7 @@
 .fourOfourpage{
     display: grid;
     z-index: 3;
-    background-image: url("src/assets/redforest.jpg");
+    background-image: url("/src/assets/redforest.jpg");
     height:100vh;
     place-items: center;
 
